@@ -57,17 +57,44 @@
 // console.log(result[1])
 
 
-function twosum(nums,target){
-    for (let i =0; i<nums.length; i++){
-        for (let j= 0; j<nums.length; j++){
-            if (nums[i] + nums[j] == target){
-                return[i,j]
-            }
+// function twosum(nums,target){
+//     for (let i =0; i<nums.length; i++){
+//         for (let j= 0; j<nums.length; j++){
+//             if (nums[i] + nums[j] == target){
+//                 return[i,j]
+//             }
+//         }
+//     }
+// }
+
+// let nums =[3,2,5,7,4];
+// let target = 10;
+
+// console.log(twosum (nums,target))
+
+/// better
+
+function twosum (nums, target){
+    nums.sort((a,b) => a-b);
+
+    let i = 0;
+    let j = nums.length-1;
+    while (i<j){
+        let sum = nums[i] + nums[j];
+        if(sum == target){
+            return [i,j]
+        }
+        if(sum < target){
+            i++
+        }
+        else(sum > target)
+        {
+            j--
         }
     }
+    return -1;
 }
 
-let nums =[3,2,5,7,4];
-let target = 10;
-
-console.log(twosum (nums,target))
+let nums = [1,3,5,4,8];
+let target = 9;
+console.log ( twosum(nums,target))
