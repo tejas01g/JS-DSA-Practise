@@ -1,0 +1,2 @@
+let a = prompt('enter name')
+console.log(a) 
