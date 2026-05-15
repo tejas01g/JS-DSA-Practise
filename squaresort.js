@@ -16,7 +16,7 @@ function squaresort(nums){
     let j = 0;
     let result = [];
 
-    while(i < neg.length && pos.length){
+    while(i < neg.length && j< pos.length){
         if(neg[i] < pos[j]){
             result.push(neg[i]);
             i++;
