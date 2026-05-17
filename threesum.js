@@ -32,7 +32,7 @@ function threesum(arr, target){
             let compliment = target - (arr[i] + arr[j]);
 
             if (map.has(compliment)){
-                return [arr[i] , compliment , arr[j]];
+                return [i, map.get(compliment) , j];
             }
             map.set(arr[j], j)
         }
