@@ -1,6 +1,6 @@
 function MergeSort(arr1, arr2){
     let i = 0;
-    let j = 1;
+    let j = 0;
 
     let result =[];
 
@@ -15,6 +15,14 @@ function MergeSort(arr1, arr2){
             j++;
         }
     }
+     while(i < arr1.length){
+            result.push(arr1[i]);
+            i++
+        }
+        while(j < arr2.length){
+            result.push(arr2[j])
+            j++
+        } 
     return result;
 }
 let arr1 = [2,4,6,8];
