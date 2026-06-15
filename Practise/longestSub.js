@@ -37,7 +37,7 @@
 
 
 
-function longestSub(s,k){
+function longestSub(s){
     let high = 0;
     let low = 0;
     let res = 0;
@@ -58,7 +58,7 @@ function longestSub(s,k){
     return res
 }
 
-let s = "aaaabbbccccdddeeeeeeff";
-let k = 2
+let s = "aaaabbbccccdddeeeeeeffgggggggggggghhiiiiiiiijjjkkkklllmmmmiiiiihhhhhhhhh";
+// let k = 0
 
-console.log(longestSub(s,k))
+console.log(longestSub(s))
