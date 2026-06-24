@@ -100,5 +100,5 @@ function findmax(nums, target){
 }
 
 let nums = [1,2,4,4];
-let target = 9;
+let target = 4;
 console.log(findmax(nums, target))
